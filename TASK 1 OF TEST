@@ -1,0 +1,17 @@
+TASK 1:
+You are a developer who accidentally went back in time. You can’t return back to your
+timeline because your time machine needs to sort an array from 10 Gigabytes of unsorted
+integer data. The problem in front of you is Machine during that time was not that
+advanced. You find a device with 1 gig of ram and 240 Gigabytes of the hard drive.
+-They are all integers like 10,5,98,32,22,87,5,6,9 etc.
+-Same integer values can be repeatedly appearing in the file.
+Create a function to read 10 gigabytes of data and sort it. (Pseudocode and logic will also work)
+
+
+SOLUTION:
+
+APPROACH 1:
+
+1. Split the file into parts (buffers) that you can sort in-place
+2. Then when all buffers are sorted take 2 (or more) at the time and merge them (merge sort) 
+3. Until there's only 1 buffer remaining which will be the sorted file
